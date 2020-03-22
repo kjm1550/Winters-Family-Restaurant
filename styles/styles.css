@@ -1,0 +1,97 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#page {
+	background-image: url(../img/wood-paneling.jpg);
+}
+
+#sidebar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: #035b3b;
+	height: 100%;
+	width: 425px;
+}
+
+#sidebar-text {
+	padding: 0 30px;
+	color: rgb(219, 219, 219);
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-family: 'Muli', sans-serif;
+}
+
+#sidebar h1 {
+	font-size: 2.5em;
+	padding-bottom: 40px;
+}
+
+#sidebar p {
+	font-size: 1.4em;
+	list-style: none;
+	padding-top: 10px;
+}
+#sidebar strong {
+	text-decoration: underline;
+	font-size: 1.2em;
+}
+#sidebar a {
+	color: rgb(219, 219, 219);
+}
+#sidebar a:hover {
+	color: #96745b;
+}
+
+#main {
+	padding-left: 425px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.item {
+	padding: 70px 30px;
+}
+#googleMap {
+	width: 80%;
+}
+
+@media only screen and (max-width: 970px) {
+	#sidebar {
+		width: 100%;
+		position: unset;
+		padding-bottom: 40px;
+	}
+	#sidebar-text {
+		position: unset;
+		top: unset;
+		transform: unset;
+	}
+	#sidebar h1 {
+		padding-top: 50px;
+	}
+
+	#sidebar p {
+		font-size: 1.2em;
+		padding-top: 15px;
+	}
+	#main {
+		padding-left: 0;
+	}
+	.item {
+		padding: 50px 10px;
+	}
+	#restaurantImage,
+	#googleMap {
+		max-width: 90%;
+	}
+}
