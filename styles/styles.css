@@ -11,9 +11,13 @@
 	position: fixed;
 	left: 0;
 	top: 0;
-	background-color: #035b3b;
+	background: rgb(8, 112, 74);
+	background: linear-gradient(130deg, rgba(8, 112, 74, 1) 0%, rgba(3, 91, 59, 1) 50%, rgba(1, 61, 39, 1) 100%);
 	height: 100%;
 	width: 425px;
+	-moz-box-shadow: 3px 3px 5px 4px #444;
+	-webkit-box-shadow: 3px 3px 5px 4px #444;
+	box-shadow: 3px 3px 5px 4px #444;
 }
 
 #sidebar-text {
@@ -59,7 +63,10 @@
 	justify-content: center;
 }
 .item {
-	padding: 70px 30px;
+	margin: 70px 30px;
+	-moz-box-shadow: 3px 3px 5px 4px #444;
+	-webkit-box-shadow: 3px 3px 5px 4px #444;
+	box-shadow: 3px 3px 5px 4px #444;
 }
 #googleMap {
 	width: 80%;
@@ -88,7 +95,7 @@
 		padding-left: 0;
 	}
 	.item {
-		padding: 50px 10px;
+		margin: 50px 10px;
 	}
 	#restaurantImage,
 	#googleMap {
